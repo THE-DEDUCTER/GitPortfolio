@@ -28,16 +28,30 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup GitHub Pages
+        id: setup_pages
         uses: actions/configure-pages@v5
-        with:
-          enablement: true
+        continue-on-error: true
 
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
+        if: steps.setup_pages.outcome == 'success'
         with:
           # Upload root directory containing index.html and assets
           path: '.'
 
       - name: Deploy to GitHub Pages
         id: deployment
+        if: steps.setup_pages.outcome == 'success'
         uses: actions/deploy-pages@v4
+
+      - name: Configuration Reminder
+        if: steps.setup_pages.outcome != 'success'
+        run: |
+          echo "========================================================="
+          echo "⚠️ GITHUB PAGES IS NOT YET CONFIGURED FOR ACTIONS ⚠️"
+          echo "========================================================="
+          echo "To fix this and deploy your portfolio:"
+          echo "1. Go to your repository Settings -> Pages"
+          echo "2. Under 'Build and deployment' -> 'Source', select 'GitHub Actions'"
+          echo "3. Go to the Actions tab and re-run this workflow."
+          echo "========================================================="
