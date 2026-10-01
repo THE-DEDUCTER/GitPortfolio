@@ -63,13 +63,18 @@ A sleek, responsive dark-themed portfolio showcasing full-stack projects, AI/ML 
 
 This repository includes a pre-configured GitHub Actions workflow [`.github/workflows/deploy.yml`](file:///.github/workflows/deploy.yml) that automatically deploys the portfolio to **GitHub Pages**.
 
-To host this website yourself:
-1. In your GitHub repository, go to **Settings** -> **Pages**.
-2. Under **Build and deployment** -> **Source**, select **GitHub Actions**.
-3. Push any commit to `main` (or trigger manually under **Actions** -> **Deploy to GitHub Pages**).
-4. Your website will be live at `https://<username>.github.io/<repo-name>/`!
+### 🌟 For Workshop / Student Attendees:
+To avoid the common `Permission Denied (403)` error when pushing:
+- **Best Method**: Click the green **`Use this template`** button at the top of this repository ➔ **`Create a new repository`**. This creates your own copy under your account with full write permissions!
+- **If already cloned**: Run `setup-new-repo.bat` (Windows) or `bash setup-new-repo.sh` (Mac/Linux) to connect your local clone directly to your own repository!
 
-📄 For a complete walkthrough, see the included [STEPS.md](file:///STEPS.md) guide.
+### 🚀 Activating GitHub Pages in 30 Seconds:
+1. In your GitHub repository, go to **Settings** ➔ **Pages**.
+2. Under **Build and deployment** ➔ **Source**, select **`GitHub Actions`**.
+3. Push any commit to `main` (or run manually under **Actions** ➔ **Deploy to GitHub Pages**).
+4. Your website is live at `https://<your-username>.github.io/<your-repo-name>/`!
+
+📄 For the complete illustrated guide and troubleshooting FAQ, read [STEPS.md](file:///STEPS.md).
 
 ---
 
