@@ -69,7 +69,7 @@ To host this website yourself:
 3. Push any commit to `main` (or trigger manually under **Actions** -> **Deploy to GitHub Pages**).
 4. Your website will be live at `https://<username>.github.io/<repo-name>/`!
 
-📄 For a complete walkthrough, see the included [STEPS.txt](file:///STEPS.txt) file.
+📄 For a complete walkthrough, see the included [STEPS.md](file:///STEPS.md) guide.
 
 ---
 
