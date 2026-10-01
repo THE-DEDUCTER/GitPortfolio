@@ -78,19 +78,22 @@ To avoid the common `Permission Denied (403)` error when pushing:
 
 ---
 
-## 💻 Getting Started Locally
+## 💻 Getting Started & Setting Up Your Own Repo
 
-Clone the repository and open `index.html` in your browser:
+Clone the repository, customize it, and then set up your own Git repository using these exact commands:
 
 ```bash
-# Clone the repository
-git clone git@github.com:AdityaxDeore/Portfolio-FY-GithubSession.git
-
-# Navigate into the project folder
-cd Portfolio-FY-GithubSession
-
-# Run a local web server (optional)
-python -m http.server 5500
+cd "F:\Coding Workspace\Portfolio-FY-GithubSession"
+git status
+git remote -v
+Get-ChildItem -Name LICENSE*
+git remote remove origin
+git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+git remote -v
+git branch -M main
+git add .
+git commit -m "Initial project setup"
+git push -u origin main
 ```
 
 Open `http://localhost:5500` in any modern web browser.
