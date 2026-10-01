@@ -59,6 +59,20 @@ A sleek, responsive dark-themed portfolio showcasing full-stack projects, AI/ML 
 
 ---
 
+## 🌐 Free 1-Click Hosting on GitHub Pages (via GitHub Actions)
+
+This repository includes a pre-configured GitHub Actions workflow [`.github/workflows/deploy.yml`](file:///.github/workflows/deploy.yml) that automatically deploys the portfolio to **GitHub Pages**.
+
+To host this website yourself:
+1. In your GitHub repository, go to **Settings** -> **Pages**.
+2. Under **Build and deployment** -> **Source**, select **GitHub Actions**.
+3. Push any commit to `main` (or trigger manually under **Actions** -> **Deploy to GitHub Pages**).
+4. Your website will be live at `https://<username>.github.io/<repo-name>/`!
+
+📄 For a complete walkthrough, see the included [STEPS.txt](file:///STEPS.txt) file.
+
+---
+
 ## 💻 Getting Started Locally
 
 Clone the repository and open `index.html` in your browser:

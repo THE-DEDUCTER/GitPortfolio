@@ -1,0 +1,77 @@
+================================================================================
+   STEP-BY-STEP GUIDE: HOSTING YOUR PORTFOLIO ON GITHUB PAGES VIA ACTIONS
+================================================================================
+
+This guide explains how anyone can host this portfolio website for FREE on
+GitHub Pages using GitHub Actions with zero complex configuration.
+
+--------------------------------------------------------------------------------
+PREREQUISITES:
+--------------------------------------------------------------------------------
+1. You have a GitHub account (https://github.com).
+2. You have forked or pushed this repository to your own GitHub account.
+3. The workflow file ".github/workflows/deploy.yml" is present in the repository.
+
+--------------------------------------------------------------------------------
+STEP 1: OPEN YOUR REPOSITORY ON GITHUB
+--------------------------------------------------------------------------------
+1. Open your web browser and go to your repository on GitHub:
+   https://github.com/<YOUR_GITHUB_USERNAME>/<YOUR_REPOSITORY_NAME>
+
+--------------------------------------------------------------------------------
+STEP 2: SWITCH GITHUB PAGES SOURCE TO "GITHUB ACTIONS"
+--------------------------------------------------------------------------------
+1. Click on the "Settings" tab (gear icon at the top right of your repository).
+2. In the left-hand sidebar navigation, locate the "Code and automation" section.
+3. Click on "Pages".
+4. Look under the "Build and deployment" heading:
+   - Find the dropdown labeled "Source".
+   - By default, it says "Deploy from a branch".
+   - Click the dropdown and select:
+     --> "GitHub Actions"
+5. Save settings (if prompted). GitHub Pages is now connected to the GitHub Actions workflow!
+
+--------------------------------------------------------------------------------
+STEP 3: RUN THE DEPLOYMENT
+--------------------------------------------------------------------------------
+You can deploy in two easy ways:
+
+Method A (Automatic on Push):
+- Any push or commit to the "main" branch will automatically trigger the
+  deployment action.
+
+Method B (Manual Trigger via Actions tab):
+1. In your GitHub repository, click on the "Actions" tab at the top.
+2. In the left sidebar list of workflows, click "Deploy to GitHub Pages".
+3. On the right side, click the "Run workflow" dropdown button.
+4. Keep branch as "main" and click the green "Run workflow" button.
+
+--------------------------------------------------------------------------------
+STEP 4: GET YOUR LIVE WEBSITE URL
+--------------------------------------------------------------------------------
+1. Wait about 30 to 60 seconds for the action to finish.
+2. A green checkmark will appear indicating successful deployment.
+3. Click on the completed workflow run. In the run summary, you will see the
+   live deployment URL.
+4. You can also go back to "Settings" -> "Pages" anytime to see your live URL:
+   https://<YOUR_GITHUB_USERNAME>.github.io/<YOUR_REPOSITORY_NAME>/
+
+--------------------------------------------------------------------------------
+STEP 5: HOW TO CUSTOMIZE FOR YOURSELF
+--------------------------------------------------------------------------------
+If someone else wants to use this template:
+1. Edit "index.html" to replace:
+   - Name, Title, Email, Phone, Location, Birthday
+   - About me paragraphs
+   - Education, Experience, Achievements, Skills
+   - Projects and Blog articles
+2. Replace the avatar image at "assets/images/my-avatar.png".
+3. Save and commit your changes:
+     git add .
+     git commit -m "Update portfolio with my personal details"
+     git push origin main
+4. GitHub Actions will automatically rebuild and update your live site!
+
+================================================================================
+CONGRATULATIONS! YOUR PORTFOLIO IS NOW HOSTED AND LIVE GLOBALLY!
+================================================================================
